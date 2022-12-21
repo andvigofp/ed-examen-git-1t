@@ -11,11 +11,11 @@ Grupo: DAM
 
 	![carpetas iniciales](img/1.png)
 
-	```bash
-	git status
-	git add .
-	git commit -m "proyecto base"
-       ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "proyecto base"
+    ```
 
 3. Creamos y desarrollamos la rama valor_referencia.
 
