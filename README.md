@@ -24,9 +24,10 @@ Grupo: DAM
 	![carpetas iniciales](img/2.png)
 
 	```bash
-	git branch valor_referencia o git checkout -b valor_referencia
+	git branch valor_referencia  
+	git checkout -b valor_referencia - Otra forma de crear una rama, te cambia directamente a la rama que creaste
 	git checkout valor_referencia
-    ```
+    	```
 	
 - Creamos el objecto Clase.java, lo desarrollamos y modificamos Main.java, por último lo comiteamos **probando paso por valor y referencia**
 	
@@ -36,17 +37,17 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "probando paso por valor y referencia"
-     ```
+     	```
 	 
 - Modifica objecto Clase y también modificamos Main.java, por último lo comiteamos **corregido y mejorado**	 
 	 
 	![carpetas iniciales](img/4.png)
 	 
-	  ```bash
+	 ```bash
 	 git status
 	 git add .
 	 git commit -m "corregido y mejorado"
-     ```
+    	 ```
 
 4. Hacemos un push de la rama valor_referencia.
 
@@ -61,7 +62,7 @@ Grupo: DAM
 	 ```bash
 	 git checkout master
 	 git merge valor_referencia
-     ```
+    	 ```
 
 6. Creamos una rama paso_arrays y la desarrollamos.
 
@@ -72,7 +73,7 @@ Grupo: DAM
 	```bash
 	 git checkout master
 	 git merge valor_referencia
-     ```
+     	```
 	
 - Modificamos el Main.java y lo commiteamos **pasando arrays**
 
@@ -82,7 +83,7 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "paso_arrays"
-     ```
+     	```
 		
 7. Hacemos un merge a master.
 
@@ -93,7 +94,7 @@ Grupo: DAM
 	```bash
 	 git checkout master
 	 git merge paso_arrays
-     ```
+     	```
 
 8. Creamos las ramas comparando_objetos y comparando_strings y las desarrollamos.
 
@@ -102,9 +103,11 @@ Grupo: DAM
 	![carpetas iniciales](img/9.png)
 	
 	```bash
-	 git branch comparando_objetos o git checkout -b comparando_objetos
-	 git branch comparando_strings o git checkout -b comparando_strings
-     ```
+	 git branch comparando_objetos 
+	 git checkout -b comparando_objetos
+	 git branch comparando_strings 
+	 git checkout -b comparando_strings
+    	 ```
 	 	 
 - Nos cambiamos a la rama correspondiente **comparando_strings**
 
@@ -112,7 +115,7 @@ Grupo: DAM
 	
 	```bash
 	 git checkout comparando_strings
-     ```
+     	```
 	
 - Creamos el objecto **compareWithEquals.Java** y lo desarrollamos
 
@@ -122,7 +125,7 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "probando equals con strings"
-     ```
+     	```
 	
 - Nos cambiamos a la rama **comparando_objetos**
 
@@ -130,7 +133,7 @@ Grupo: DAM
 		
 	```bash
 	 git checkout comparando_objetos
-     ```
+    	 ```
 
 - Creamos el objecto **compareWithEquals.Java** y lo desarrollamos
 
@@ -140,7 +143,7 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "ejemplos de uso de equals con objetos"
-     ```
+     	```
 
 9. Hacemos merge de ambas a master, solventando el conflicto.
 
@@ -152,7 +155,7 @@ Grupo: DAM
 	```bash
 	 git checkout master
 	 git merge comparando_strings
-     ```
+     	```
 	 
 - Ahora hacemos merge **comparando_objetos**, tenemos un conflicto
 - Porque comparando_strings y comparando_objetos, tienen el mismo archivo y diferente contendio
@@ -161,7 +164,7 @@ Grupo: DAM
 	
 	```bash
 	 git merge comparando_objetos
-     ```
+     	```
 	 
 - Lo solucionamos cambiando el contenido y lo comiteamos **merge de comparando_strings solventando conflicto**
 
@@ -171,7 +174,7 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "merge de comparando_strings solventando conflicto"
-     ```
+     	```
 	 
 10. Creamos la rama "reestructurando" para reorganizar en paquetes. Una vez desarrollada hacemos merge a master
 (es recomendable ver el estado de los ficheros de este commit, más que el diff).
@@ -181,9 +184,10 @@ Grupo: DAM
 	![carpetas iniciales](img/17.png)
 	
 	```bash
-	 git branch reestructurando o git checkout -b reestructurando
+	 git branch reestructurando - Primer forma para crear una rama
+	 git checkout -b reestructurando - Segunda forma para crear una rama
 	 git checkout reestructurando
-     ```
+     	```
 
 - Creamos los paquetes necesarios y creamos los objetos .java y el resto de archivos.java, lo metemos en su paquete correspondiente
 - Modificamos compareWithEquals.Java, Main.Java y lo cambiamos al nombre del objeto correspondiente **PasoObjetos**
@@ -195,7 +199,7 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "aordenando en paquetes"
-     ```
+     	```
 
 - Nos cambiamos a la rama master y lo mergeamos **reestructurando**
 
@@ -204,7 +208,7 @@ Grupo: DAM
 	```bash
 	 git checkout master
 	 git merge reestructurando
-     ```
+     	```
 	
 11. Realizamos una corrección menor en valor_referencia y la hacemos un merge a master.
 
@@ -213,12 +217,12 @@ Grupo: DAM
 
 	![carpetas iniciales](img/20.png)
 	
-		```bash
+	```bash
 	 git checkout valor_referencia
 	 git status
 	 git add .
 	 git commit -m "corrección menor: escape de comilla"
-     ```
+     	```
 	 
 
 - Nos cambiamos a la rama master y mergeamos **valor_referencia**
@@ -228,7 +232,7 @@ Grupo: DAM
 	```bash
 	 git checkout master
 	 git merge valor_referencia
-     ```
+     	```
 - Nos dara un conflicto por objeto Clase.Java, lo que hacemos es añadirlo y commitearlo **Merge branch 'valor_referencia'**
 
 	![carpetas iniciales](img/22.png)
@@ -237,7 +241,7 @@ Grupo: DAM
 	 git status
 	 git add .
 	 git commit -m "Merge branch 'valor_referencia'"
-     ```
+     	```
 	 
 - ültimos nos queda subir la rama master y todo su contenido
 
@@ -246,7 +250,7 @@ Grupo: DAM
 	```bash
 	 git remote add origin https://github.com/andvigofp/ed-examen-git-1t.git
 	 git push -u origin master
-     ```
+     	```
 
 - Subir todas las ramas a la vez y su contendio
 
@@ -254,4 +258,4 @@ Grupo: DAM
 
 	 ```bash
 	 git pull --all https://github.com/andvigofp/ed-examen-git-1t.git
-     ```
+     	```
