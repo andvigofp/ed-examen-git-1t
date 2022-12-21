@@ -23,14 +23,13 @@ Grupo: DAM
 
 	![carpetas iniciales](img/2.png)
 
-	```bash
-	- Dos formas de crear una rama
-	********************************
-	git branch valor_referencia  
-	git checkout -b valor_referencia
-	********************************
-	git checkout valor_referencia
-       ```
+    ```bash
+    git branch valor_referencia  
+    git checkout -b valor_referencia
+    git checkout valor_referencia
+    ```
+       
+       
 	
 - Creamos el objecto Clase.java, lo desarrollamos y modificamos Main.java, por último lo comiteamos **probando paso por valor y referencia**
 	
