@@ -15,7 +15,7 @@ Grupo: DAM
 	git status
 	git add .
 	git commit -m "proyecto base"
-        ```
+       ```
 
 3. Creamos y desarrollamos la rama valor_referencia.
 
@@ -30,7 +30,7 @@ Grupo: DAM
 	git checkout -b valor_referencia
 	********************************
 	git checkout valor_referencia
-    	 ```
+       ```
 	
 - Creamos el objecto Clase.java, lo desarrollamos y modificamos Main.java, por último lo comiteamos **probando paso por valor y referencia**
 	
