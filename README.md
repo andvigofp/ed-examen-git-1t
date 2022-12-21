@@ -15,7 +15,7 @@ Grupo: DAM
 	git status
 	git add .
 	git commit -m "proyecto base"
-    ```
+        ```
 
 3. Creamos y desarrollamos la rama valor_referencia.
 
@@ -25,7 +25,7 @@ Grupo: DAM
 
 	```bash
 	git branch valor_referencia  
-	git checkout -b valor_referencia - Otra forma de crear una rama, te cambia directamente a la rama que creaste
+	git checkout -b valor_referencia 
 	git checkout valor_referencia
     	```
 	
